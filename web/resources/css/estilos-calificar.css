@@ -1,0 +1,66 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+/*Reglas Generales*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: viga ;
+	text-decoration: none !important;
+
+}
+/*Reglas Especiales*/
+body{
+	background-size: 100% 100%;
+}
+/*Reglas secciones*/
+section{
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+article{
+	background: #fff;
+	color: #05468A;
+	padding: 40px 70px;
+}
+article img{
+	background: #05468A;
+	color: #fff;
+	padding: 10px 10px;
+}
+article h1{
+	background: #1388D8;
+	color: #fff;
+	text-align: center;
+	padding: 50px 5px;
+}
+article h2{
+	background: #fff;
+	text-align: center;
+	padding: 50px 5px;
+}
+article h4{
+
+	text-align: center;
+
+}
+article p{
+	padding: 50px 80px;
+}
+article form{
+	float: right;
+}

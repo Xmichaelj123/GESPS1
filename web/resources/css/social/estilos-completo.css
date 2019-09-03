@@ -1,0 +1,365 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+/*Reglas Generales*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: viga ;
+	text-decoration: none !important;
+
+}
+/*Reglas Especiales*/
+body{
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-image: url(../../img/estrellas1.PNG);
+}
+/* barra social*/
+.social{
+	position: fixed;
+	left: 0;
+	top:450px;
+	z-index: 2000;
+}
+.social ul{
+	list-style: none;
+}
+.social ul li a{
+	display:inline-block;
+	color: #000;
+	background: #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+
+}
+.social ul li .icon-facebook2 {
+	background:#3C5A99 ;
+}
+.social ul li .icon-twitter {
+	background:#1DB6F2 ;
+}
+.social ul li .icon-whatsapp {
+	background:#1BD741;
+}
+.social ul li .icon-mail {
+	background:#D94E41 ;
+}
+.social ul li .icon-location {
+	background: #F20505;
+}
+.social ul li a.icon-facebook2:hover {
+	padding: 10px 40px;
+	background: #fff;
+	color: #3C5A99;
+}
+.social ul li a.icon-whatsapp:hover{
+	padding: 10px 40px;
+	background: #fff;
+	color: green;
+}
+.social ul li a.icon-location:hover {
+	padding: 10px 40px;
+	background: #fff;
+	color: #F20505;
+}
+.social ul li a.icon-mail:hover{
+	padding: 10px 40px;
+	background: #fff;
+	color: #D94E41;
+}
+.social ul li a.icon-twitter:hover{
+	padding: 10px 40px;
+	background: #fff;
+	color: #1DB6F2;
+}
+/*Migas*/
+.migas{
+	position: fixed;
+	right: 0;
+	top:450px;
+	z-index: 2000;
+}
+.migas ul{
+	list-style: none;
+}
+.migas ul li a{
+	display:inline-block;
+	color: #000;
+	background: #000;
+	padding: 10px 15px;
+	text-decoration: none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.migas ul li .icon-circle-up {
+	background:#fff ;
+}
+.migas ul li a:hover{
+	float: right;
+	text-align: right;
+	background: #000;
+	color: #fff;
+}
+/*Header*/
+header {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 140px;
+    position: fixed;
+ 	z-index: 100;
+}
+ /*Reglas Navegador*/
+nav {
+    top:-20px;
+    position: fixed;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1280px;
+	width:100%;
+}
+ 
+nav ul {
+	list-style:none;
+}
+ 
+nav > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background:#1388D8;
+	position:relative;
+}
+ 
+nav > ul li {
+	display:table-cell;
+}
+ 
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+	color: #fff;
+}
+ 
+nav > ul > li > ul {
+	display: block;
+	position: absolute;
+	background:#074E8C;
+	left: 1017px;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+	background:#000;
+	color: #fff;
+}
+ 
+nav > ul > li > a span {
+	background:#1388D8;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+nav > ul > li > a:hover > span {
+	top:0;
+}
+ 
+/*Color conos*/
+nav ul li a .icono {
+	background:#074E8C;
+	color: white;
+}
+/*Reglas secciones*/
+section{
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+/*Footer*/
+footer{
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+	background: #074E8C;
+	color: #fff;
+	clear: both;
+	padding: 10px 0px;
+	text-align: left;
+}
+footer ul {
+	list-style:none;
+}
+ 
+footer > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background:#1388D8;
+	position:relative;
+}
+ 
+footer > ul li {
+	display:table-cell;
+}
+ 
+/*Sub-menu*/
+footer > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+ 
+footer > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:#074E8C;
+	left: 50px;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+footer > ul li a {
+	color:#fff;
+	display:block;
+	line-height:-20px;
+	padding:40px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+}
+/*Color conos*/
+footer ul li a .icono {
+	background:#074E8C;
+}
+/*ingreso chequeo*/
+.form-check{
+	padding: 10px 20px;
+}
+article{
+	background: #05468A;
+	color: #fff;
+	padding: 10px 10px;
+}
+article img{
+	background: #05468A;
+	color: #fff;
+	padding: 10px 10px;
+}
+article h1{
+	background: #1388D8;
+	color: #fff;
+	text-align: center;
+	padding: 50px 5px;
+}
+article p{
+	padding: 5px 80px;
+}
+.imagen{
+	width: 100%;
+	height: 100%;
+}
+.imagen img{
+	width:  100%;
+	height: auto;
+}
+/*Validacion*/
+.modal form input:focus:valid{
+	border-color: green;		
+}
+
+.modal form input:focus:invalid{
+	border-color: red;
+}
+
+.modal form input:valid{
+	border-color: green;
+}
+
+.modal form input:invalid{
+	border-color: red;
+}
+article iframe{
+	padding: 50px 5px;
+	width: 100%;
+	height: 2900px;
+}
+.btn-group{
+	width: 100%;
+}
+.btn{
+	width: 100%;
+}
+.iframe-i{
+	width: 100%;
+	height: 100%;
+
+}
+.iframe-s iframe{
+	width: 100%;
+	height: 100%;
+}
+.btn-primary"{
+	width: 100%;
+}
+.nav-tabs{
+	background:#05468A;
+	color: white;
+}
