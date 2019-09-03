@@ -6,6 +6,387 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+        
+        <div class="social">
+            <ul>
+                <li><a href="#" target="_blank" class="icon-facebook2"></a></li>
+                <li><a href="#" target="_blank" class="icon-twitter"></a></li>
+                <li><a href="#" target="_blank" class="icon-whatsapp"></a></li>
+                <li><a href="#" target="_blank" class="icon-mail"></a></li>
+                <li><a href="#" target="_blank" class="icon-location"></a></li>
+            </ul>
+        </div>
+        <div class="migas">
+            <ul>
+                <li><a href="#" data-target="#inicio" class="icon-circle-up"></a></li>
+            </ul>
+        </div>
+        <!--Header-->
+        <header >
+
+            <nav id="inicio" >
+                <ul>
+                    <li><a href="#imagen"><span class="icono1"><i class="icon icon-home3"></i></span>Inicio</a></li>
+
+                    <li><a href="#Promociones"><span class="icono2"><i class="icon icon-rocket"></i></span>Promociones</a></li>
+
+                    <li><a href="#Servicio"><span class="icono3"><i class="icon icon-instagram"></i></span>Servicio</a></li>
+
+                    <li><a href="#Conocenos" ><span class="icono4"><i class="icon icon-address-book"></i></span>Conocenos</a></li>
+
+                    <li><a href="html/ayuda/ayuda.html" target="AreatrabajoI"><span class="icono5"><i class="icon icon-bubbles"></i></span>Ayuda</a></li>
+
+                    <li><a href=""  ><span class="icono6"><i class="icon icon-enter"></i></span>Ingreso</a>
+
+                        <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#ingreso">Iniciar Sesión</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#registro">Registrarse</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <!--Ingreso -->
+        <div class="modal fade" id="ingreso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h5  href="#" class="modal-title" href="#" id="exampleModalLabel">Ingreso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form name="ingresar" onsubmit="return validar()">
+
+                            <div class="form-group">
+                                <label for="usuario">Usuario</label>
+                                <input type="email" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingresa Tu Correo" name="usuario" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required/>
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña</label>
+                                <input type="password" name="pass" class="form-control" id="contrasena" placeholder="Contraseña" required pattern="[A-Za-z0-9]{5,15}" title="Escriba entre 5 y 15 caracteres"/>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Recordar mi Usuario
+                                    </label>
+                            </div>
+                            <div class="form-check">
+                                <!-- <a href="si/html/usuarios/Supervisor.html"></a> -->
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Recordar mi Contraseña
+                                    </label>
+                            </div>
+                            <button type="button" class="btn btn-primary"  onclick="validar();">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Registro-->
+        <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Ingresa Tus Nombres" required/>
+                                <small id="nombre" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" aria-describedby="apellido" placeholder="Ingresa Tus Apellidos" required/>
+                                <small id="apellido" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Telefono</label>
+                                <input type="tel" class="form-control" id="telefono" aria-describedby="telefono" placeholder="Ingresa Tu Telefono" required/>
+                                <small id="telefono" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo</label>
+                                <input type="email" class="form-control" id="correo" aria-describedby="correo" placeholder="Ingresa Tu Correo" required/>
+                                <small id="correo" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="direccion">Direccion</label>
+                                <input type="text" class="form-control" id="direccion" aria-describedby="direccion" placeholder="Ingresa Tu Direccion" required pattern="[a-z]{1,15}"/>
+                                <small id="direccion" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="usuario">Usuario</label>
+                                <input type="email" class="form-control" id="usuario1" aria-describedby="usuario" placeholder="Ingresa Tu Correo" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
+                                <small id="usuario" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña</label>
+                                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required pattern="[A-Za-z0-9]{5,15}" title="Escriba entre 5 y 15 caracteres"/>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" onclick="validarR();">Completar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Contenido-->
+        <section class="main">
+
+            <article class="imagen" >
+
+                <a name="imagen"></a>
+
+                <img src="img/1.jpg">
+
+            </article>
+
+        </section>
+
+        <section class="main">
+
+            <article class="texto">
+
+                <a name="Promociones"></a>
+
+                <h1 id="promo">Promociones</h1>
+
+            </article>
+        </section>
+
+        <section class="main">
+
+            <article class="texto">
+
+                <p>Aqui podras encontrar todas y cada una de las promociones con las que contamos actualmente podras encontrar promociones de hasta un 70% de descuento por tiempo limitado</p>
+
+                <h2>Principales promociones</h2>
+
+
+                <div class="card-deck mt-3">
+
+                    <div class="card">
+
+                        <img class="card-img-top img-fluid" src="img/01.PNG" alt="Card image cap">
+
+                    </div>
+
+                    <div class="card">
+
+                        <img class="card-img-top img-fluid" src="img/02.PNG" alt="Card image cap">
+
+                    </div>
+
+                    <div class="card">
+
+                        <img class="card-img-top img-fluid" src="img/03.PNG" alt="Card image cap">
+
+                    </div>
+
+                    <div class="card">
+
+                        <img class="card-img-top img-fluid" src="img/04.PNG" alt="Card image cap">
+
+                    </div>
+
+                    <div class="card">
+
+                        <img class="card-img-top img-fluid" src="img/05.PNG" alt="Card image cap">
+
+                    </div>
+
+                </div>	
+
+                <article class="imagen" >
+
+                    <img src="img/2.jpg">
+
+                        <p><span class="icono7"><i class="icon icon-shocked"></i></span>Promocion 50%
+                            Pide tu primer domicilio y recibe el servicio a la mitad de precio</p>
+
+
+
+                        <img src="img/Fondo2.jpg">
+
+                            <p><span class="icono7"><i class="icon icon-wink"></i></span>Este Dia de Las Madres ven portu mega promocion y disfruta de un 80% de descuento con la compañia de tu madre.</p>
+                            </article>
+
+                            </article>
+                            </section>
+
+                            <section class="main">
+
+                                <article class="texto">
+
+                                    <a name="Servicio"></a>
+
+
+                                    <h1>Servicio</h1>
+
+                                </article>
+                            </section>
+
+                            <section> 
+                                <article>
+
+                                    <p>Aqui podras encontrar nuestros diferentes servicios disponibles al dia en donde podermos ver la descripcion de los servicios.</p>
+
+                                    <h2>Servicios</h2>
+
+                                    <div class="card-group">
+                                        <div class="card">
+
+
+                                            <div class="card-body">
+
+                                                <h5 class="card-title">lavado</h5>
+                                                <p class="card-text">El lavado consta de 3 diferentes tipos de lavado que se encuentran disponibles en nuestras tiendas
+
+                                                    Este Tinturado esta especialmente diseñado para Ropa Fuerte para que se tratada de la mejor manera posible para brindar un mejor servicio
+
+                                                    Este Tinturado esta especialmente diseñado para la ropa normal para que se tratada de la mejor manera posible para brindar un mejor servicio
+
+                                                    Este Tinturado esta especialmente diseñado para la ropa Delicada para que se tratada de la mejor manera posible para brindar un mejor servicio.</p>
+
+
+
+
+                                            </div>
+
+                                            <a type="buttom" href="#"  class="btn btn-outline-success">Saber mas!!</a>
+
+                                        </div>
+
+                                        <div class="card">
+
+                                            <div class="card-body">
+
+                                                <h5 class="card-title">Planchado</h5>
+
+                                                <p class="card-text">El planchado consta de 3 diferentes tipos de planchado que se encuentran disponibles en nuestras tiendas
+
+                                                    Este Tinturado esta especialmente diseñado para Ropa Fuerte para que se tratada de la mejor manera posible para brindar un mejor servicio
+
+                                                    Este Tinturado esta especialmente diseñado para la ropa normal para que se tratada de la mejor manera posible para brindar un mejor servicio
+
+                                                    Este Tinturado esta especialmente diseñado para la ropa Delicada para que se tratada de la mejor manera posible para brindar un mejor servicio.</p>
+
+
+                                            </div>
+
+                                            <a type="buttom" href="#"  class="btn btn-outline-success">Saber mas!!</a>
+
+                                        </div>
+
+                                        <div class="card">
+
+                                            <div class="card-body">
+
+                                                <h5 class="card-title">Tintura</h5>
+
+                                                <p class="card-text">Este Tinturado esta especialmente diseñado para la ropa de cuero para que se tratada de la mejor manera posible para brindar un mejor servicio
+
+                                                    Este Tinturado esta especialmente diseñado para la ropa de normal para que se tratada de la mejor manera posible para brindar un mejor servicio
+
+                                                    Este Tinturado esta especialmente diseñado para la ropa de Delicada para que se tratada de la mejor manera posible para brindar un mejor servicio.</p>
+
+                                            </div>
+
+                                            <a type="buttom" href="#"  class="btn btn-outline-success">Saber mas!!</a>
+
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </section>
+
+                            <section class="main">
+
+                                <article class="texto">
+
+                                    <a name="Conocenos"></a>
+
+                                    <h1>Conocenos</h1>
+
+                                </article>
+                            </section>
+                            <section>
+
+                                <article>
+
+                                    <h2>Quienes somos</h2>
+
+                                    <p>QUINES SOMOS El sistema de información, es un sistema que gestiona el ingreso y salida de prendas dentro del centro de lavado e implementando una plataforma web que le permita al cliente un agenda miento de pedidos que compete todo lo relacionado con la sistematización en los procesos de asignación de servicios, además de la asignación de los horarios para los domicilios pero con restricciones del centro de lavado, los clientes podrán un calendario en donde podrán asignar los horarios de ingreso y salida de las prendas desde un dispositivo PC.</p>
+
+
+                                    <div class="card-group">
+                                        <div class="card">
+
+
+                                            <div class="card-body">
+
+                                                <h5 class="card-title">Mision</h5>
+                                                <p class="card-text">Este documento tiene como propósito definir las especificaciones funcionales, no funcionales para lograr el desarrollo de un sistema de información y una plataforma web de pedidos que permitirá gestionar el proceso de ingreso y salida de las prendas. Éste sistema será actualizado solo por el equipo de trabajo (Gaes 4).</p>
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card">
+
+                                            <div class="card-body">
+
+                                                <h5 class="card-title">Vision</h5>
+
+                                                <p class="card-text">El sistema actualmente contará con un módulo de calificaciones y novedades, en el cual se registrarán las observaciones de los clientes. A futuro se espera realizar un módulo de pagos para que los clientes puedan generar pagos directos desde el sistema.</p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5>Nos puedes encontar en :</h5>
+
+                                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono8"><i class="icon icon-map2"></i></span>Direccion : Cra 23 #50 Sur</a></li>
+                                    <li class="list-group-item"><span class="icono9"><i class="icon icon-mobile2"></i></span>Telefono : 3124859956</a></li>
+                                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono10"><i class="icon icon-facebook"></i></span>Facebook : Facebook.com/Gesp</a></li>
+                                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono11"><i class="icon icon-twitter"></i></span>Twitter : Twitter.com/Gesp</a></li>
+                                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono12"><i class="icon icon-instagram"></i></span>Instagram : Instagram.com/Gesp</a></li>
+
+                                    <h5>Buscanos en google maps</h5>
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!4v1559589385242!6m8!1m7!1saNYKGotErpD4Rfk8Koi20Q!2m2!1d4.577797455631202!2d-74.15673604151701!3f333.04262868748583!4f5.973926806177758!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                                </article>		
+
+
+                                </article>
+
+                            </section>
+                            </body>
+                            </html>
