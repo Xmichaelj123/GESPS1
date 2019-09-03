@@ -1,12 +1,13 @@
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>TODO supply a title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <body>
-        
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>GESP</title>
+    </h:head>
+    <h:body>
         <div class="social">
             <ul>
                 <li><a href="#" target="_blank" class="icon-facebook2"></a></li>
@@ -55,7 +56,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h5  href="#" class="modal-title" href="#" id="exampleModalLabel">Ingreso</h5>
+                        <a  href="#" class="modal-title" id="exampleModalLabel">Ingreso</a>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -66,25 +67,25 @@
 
                             <div class="form-group">
                                 <label for="usuario">Usuario</label>
-                                <input type="email" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingresa Tu Correo" name="usuario" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required/>
+                                <input type="email" class="form-control" id="usuario" aria-describedby="emailHelp" placeholder="Ingresa Tu Correo" name="usuario" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required="true"/>
                                 <small id="emailHelp" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="contrasena">Contraseña</label>
-                                <input type="password" name="pass" class="form-control" id="contrasena" placeholder="Contraseña" required pattern="[A-Za-z0-9]{5,15}" title="Escriba entre 5 y 15 caracteres"/>
+                                <input type="password" name="pass" class="form-control" id="contrasena" placeholder="Contraseña" required="true" pattern="[A-Za-z0-9]{5,15}" title="Escriba entre 5 y 15 caracteres"/>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Recordar mi Usuario
-                                    </label>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Recordar mi Usuario
+                                </label>
                             </div>
                             <div class="form-check">
                                 <!-- <a href="si/html/usuarios/Supervisor.html"></a> -->
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        Recordar mi Contraseña
-                                    </label>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Recordar mi Contraseña
+                                </label>
                             </div>
                             <button type="button" class="btn btn-primary"  onclick="validar();">Enviar</button>
                         </form>
@@ -108,37 +109,37 @@
                         <form>
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Ingresa Tus Nombres" required/>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Ingresa Tus Nombres" required="true"/>
                                 <small id="nombre" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="apellido">Apellido</label>
-                                <input type="text" class="form-control" id="apellido" aria-describedby="apellido" placeholder="Ingresa Tus Apellidos" required/>
+                                <input type="text" class="form-control" id="apellido" aria-describedby="apellido" placeholder="Ingresa Tus Apellidos" required="true"/>
                                 <small id="apellido" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Telefono</label>
-                                <input type="tel" class="form-control" id="telefono" aria-describedby="telefono" placeholder="Ingresa Tu Telefono" required/>
+                                <input type="tel" class="form-control" id="telefono" aria-describedby="telefono" placeholder="Ingresa Tu Telefono" required="true"/>
                                 <small id="telefono" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="correo">Correo</label>
-                                <input type="email" class="form-control" id="correo" aria-describedby="correo" placeholder="Ingresa Tu Correo" required/>
+                                <input type="email" class="form-control" id="correo" aria-describedby="correo" placeholder="Ingresa Tu Correo" required="true"/>
                                 <small id="correo" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="direccion">Direccion</label>
-                                <input type="text" class="form-control" id="direccion" aria-describedby="direccion" placeholder="Ingresa Tu Direccion" required pattern="[a-z]{1,15}"/>
+                                <input type="text" class="form-control" id="direccion" aria-describedby="direccion" placeholder="Ingresa Tu Direccion" required="true" pattern="[a-z]{1,15}"/>
                                 <small id="direccion" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="usuario">Usuario</label>
-                                <input type="email" class="form-control" id="usuario1" aria-describedby="usuario" placeholder="Ingresa Tu Correo" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
+                                <input type="email" class="form-control" id="usuario1" aria-describedby="usuario" placeholder="Ingresa Tu Correo" required="true" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
                                 <small id="usuario" class="form-text text-muted"></small>
                             </div>
                             <div class="form-group">
                                 <label for="contrasena">Contraseña</label>
-                                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required pattern="[A-Za-z0-9]{5,15}" title="Escriba entre 5 y 15 caracteres"/>
+                                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required="true" pattern="[A-Za-z0-9]{5,15}" title="Escriba entre 5 y 15 caracteres"/>
                             </div>
 
                             <button type="submit" class="btn btn-primary" onclick="validarR();">Completar</button>
@@ -148,20 +149,13 @@
             </div>
         </div>
 
-
-
         <!--Contenido-->
-        <section class="main">
+        <section class="main"/>
 
-            <article class="imagen" >
-
-                <a name="imagen"></a>
-
-                <img src="img/1.jpg">
-
-            </article>
-
-        </section>
+        <article class="imagen">
+        <a name="imagen"></a>
+        <img src="img/1.jpg"/>
+        </article>
 
         <section class="main">
 
@@ -187,31 +181,31 @@
 
                     <div class="card">
 
-                        <img class="card-img-top img-fluid" src="img/01.PNG" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/01.PNG" alt="Card image cap"/>
 
                     </div>
 
                     <div class="card">
 
-                        <img class="card-img-top img-fluid" src="img/02.PNG" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/02.PNG" alt="Card image cap"/>
 
                     </div>
 
                     <div class="card">
 
-                        <img class="card-img-top img-fluid" src="img/03.PNG" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/03.PNG" alt="Card image cap"/>
 
                     </div>
 
                     <div class="card">
 
-                        <img class="card-img-top img-fluid" src="img/04.PNG" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/04.PNG" alt="Card image cap"/>
 
                     </div>
 
                     <div class="card">
 
-                        <img class="card-img-top img-fluid" src="img/05.PNG" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="img/05.PNG" alt="Card image cap"/>
 
                     </div>
 
@@ -219,14 +213,14 @@
 
                 <article class="imagen" >
 
-                    <img src="img/2.jpg">
+                    <img src="img/2.jpg"/>
 
                         <p><span class="icono7"><i class="icon icon-shocked"></i></span>Promocion 50%
                             Pide tu primer domicilio y recibe el servicio a la mitad de precio</p>
 
 
 
-                        <img src="img/Fondo2.jpg">
+                        <img src="img/Fondo2.jpg"/>
 
                             <p><span class="icono7"><i class="icon icon-wink"></i></span>Este Dia de Las Madres ven portu mega promocion y disfruta de un 80% de descuento con la compañia de tu madre.</p>
                             </article>
@@ -373,20 +367,21 @@
                                     <h5>Nos puedes encontar en :</h5>
 
                                     <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono8"><i class="icon icon-map2"></i></span>Direccion : Cra 23 #50 Sur</a></li>
-                                    <li class="list-group-item"><span class="icono9"><i class="icon icon-mobile2"></i></span>Telefono : 3124859956</a></li>
+                                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono9"><i class="icon icon-mobile2"></i></span>Telefono : 3124859956</a></li>
                                     <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono10"><i class="icon icon-facebook"></i></span>Facebook : Facebook.com/Gesp</a></li>
                                     <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono11"><i class="icon icon-twitter"></i></span>Twitter : Twitter.com/Gesp</a></li>
                                     <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action"><span class="icono12"><i class="icon icon-instagram"></i></span>Instagram : Instagram.com/Gesp</a></li>
 
                                     <h5>Buscanos en google maps</h5>
 
-                                    <iframe src="https://www.google.com/maps/embed?pb=!4v1559589385242!6m8!1m7!1saNYKGotErpD4Rfk8Koi20Q!2m2!1d4.577797455631202!2d-74.15673604151701!3f333.04262868748583!4f5.973926806177758!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <iframe allowfullscreen="#" src="https://www.google.com/maps/embed?pb=!4v1559589385242!6m8!1m7!1saNYKGotErpD4Rfk8Koi20Q!2m2!1d4.577797455631202!2d-74.15673604151701!3f333.04262868748583!4f5.973926806177758!5f0.7820865974627469" frameborder="0" style="border:0"></iframe>
 
                                 </article>		
 
 
-                                </article>
+                            
 
                             </section>
-                            </body>
-                            </html>
+    </h:body>
+</html>
+
